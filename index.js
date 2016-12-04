@@ -37,7 +37,7 @@ function readSizeRecursive(item, ignoreRegEx, callback) {
             );
           },
           function done(finalErr) {
-            cb(finalErr, total);
+            cb(finalErr, total, item);
           }
         );
       });
